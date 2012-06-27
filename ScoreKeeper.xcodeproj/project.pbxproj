@@ -18,6 +18,9 @@
 		6AB072BD159AEDAA00A2D137 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB072A4159AEDAA00A2D137 /* Foundation.framework */; };
 		6AB072C5159AEDAA00A2D137 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6AB072C3159AEDAA00A2D137 /* InfoPlist.strings */; };
 		6AB072C8159AEDAA00A2D137 /* ScoreKeeperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB072C7159AEDAA00A2D137 /* ScoreKeeperTests.m */; };
+		6AB072D3159AEE6E00A2D137 /* COPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB072D2159AEE6E00A2D137 /* COPlayer.m */; };
+		6AB072D4159AEE6E00A2D137 /* COPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB072D2159AEE6E00A2D137 /* COPlayer.m */; };
+		6AB072D7159AEEBB00A2D137 /* COPlayerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB072D6159AEEBB00A2D137 /* COPlayerTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,18 +38,22 @@
 		6AB072A2159AEDAA00A2D137 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6AB072A4159AEDAA00A2D137 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6AB072A6159AEDAA00A2D137 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		6AB072AA159AEDAA00A2D137 /* ScoreKeeper-Info.plist */ = {isa = PBXFileReference; path = "ScoreKeeper-Info.plist"; sourceTree = "<group>"; };
+		6AB072AA159AEDAA00A2D137 /* ScoreKeeper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScoreKeeper-Info.plist"; sourceTree = "<group>"; };
 		6AB072AC159AEDAA00A2D137 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6AB072AE159AEDAA00A2D137 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6AB072B0159AEDAA00A2D137 /* ScoreKeeper-Prefix.pch */ = {isa = PBXFileReference; path = "ScoreKeeper-Prefix.pch"; sourceTree = "<group>"; };
-		6AB072B1159AEDAA00A2D137 /* COAppDelegate.h */ = {isa = PBXFileReference; path = COAppDelegate.h; sourceTree = "<group>"; };
+		6AB072B0159AEDAA00A2D137 /* ScoreKeeper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScoreKeeper-Prefix.pch"; sourceTree = "<group>"; };
+		6AB072B1159AEDAA00A2D137 /* COAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = COAppDelegate.h; sourceTree = "<group>"; };
 		6AB072B2159AEDAA00A2D137 /* COAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = COAppDelegate.m; sourceTree = "<group>"; };
 		6AB072B9159AEDAA00A2D137 /* ScoreKeeperTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoreKeeperTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AB072BA159AEDAA00A2D137 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		6AB072C2159AEDAA00A2D137 /* ScoreKeeperTests-Info.plist */ = {isa = PBXFileReference; path = "ScoreKeeperTests-Info.plist"; sourceTree = "<group>"; };
+		6AB072C2159AEDAA00A2D137 /* ScoreKeeperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScoreKeeperTests-Info.plist"; sourceTree = "<group>"; };
 		6AB072C4159AEDAA00A2D137 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6AB072C6159AEDAA00A2D137 /* ScoreKeeperTests.h */ = {isa = PBXFileReference; path = ScoreKeeperTests.h; sourceTree = "<group>"; };
+		6AB072C6159AEDAA00A2D137 /* ScoreKeeperTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScoreKeeperTests.h; sourceTree = "<group>"; };
 		6AB072C7159AEDAA00A2D137 /* ScoreKeeperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoreKeeperTests.m; sourceTree = "<group>"; };
+		6AB072D1159AEE6E00A2D137 /* COPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COPlayer.h; sourceTree = "<group>"; };
+		6AB072D2159AEE6E00A2D137 /* COPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COPlayer.m; sourceTree = "<group>"; };
+		6AB072D5159AEEBB00A2D137 /* COPlayerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COPlayerTest.h; sourceTree = "<group>"; };
+		6AB072D6159AEEBB00A2D137 /* COPlayerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COPlayerTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +115,8 @@
 			children = (
 				6AB072B1159AEDAA00A2D137 /* COAppDelegate.h */,
 				6AB072B2159AEDAA00A2D137 /* COAppDelegate.m */,
+				6AB072D1159AEE6E00A2D137 /* COPlayer.h */,
+				6AB072D2159AEE6E00A2D137 /* COPlayer.m */,
 				6AB072A9159AEDAA00A2D137 /* Supporting Files */,
 			);
 			path = ScoreKeeper;
@@ -129,6 +138,8 @@
 			children = (
 				6AB072C6159AEDAA00A2D137 /* ScoreKeeperTests.h */,
 				6AB072C7159AEDAA00A2D137 /* ScoreKeeperTests.m */,
+				6AB072D5159AEEBB00A2D137 /* COPlayerTest.h */,
+				6AB072D6159AEEBB00A2D137 /* COPlayerTest.m */,
 				6AB072C1159AEDAA00A2D137 /* Supporting Files */,
 			);
 			path = ScoreKeeperTests;
@@ -252,6 +263,7 @@
 			files = (
 				6AB072AF159AEDAA00A2D137 /* main.m in Sources */,
 				6AB072B3159AEDAA00A2D137 /* COAppDelegate.m in Sources */,
+				6AB072D3159AEE6E00A2D137 /* COPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +272,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AB072C8159AEDAA00A2D137 /* ScoreKeeperTests.m in Sources */,
+				6AB072D4159AEE6E00A2D137 /* COPlayer.m in Sources */,
+				6AB072D7159AEEBB00A2D137 /* COPlayerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
