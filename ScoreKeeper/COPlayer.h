@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface COPlayer : NSObject
+@interface COPlayer : NSObject {
+	NSString *name;
+	NSUInteger skillLevel;
+}
+
+@property (readwrite, retain) NSString *name;
+@property (readwrite, assign) NSUInteger skillLevel;
+
+- (id)initWithName:(NSString *)playerName andSkillLevel:(NSUInteger)playerSkillLevel;
 
 @end

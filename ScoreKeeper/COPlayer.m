@@ -10,4 +10,24 @@
 
 @implementation COPlayer
 
+@synthesize name;
+@synthesize skillLevel;
+
+- (id)init {
+	if (self = [super init]) {
+		return [self initWithName:@"" andSkillLevel:0];
+	}
+	
+	return self;
+}
+
+- (id)initWithName:(NSString *)playerName andSkillLevel:(NSUInteger)playerSkillLevel {
+	if (self = [super init]) {
+		[self setName:playerName];
+		[self setSkillLevel:playerSkillLevel];
+	}
+	
+	return self;
+}
+
 @end

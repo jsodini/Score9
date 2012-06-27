@@ -8,6 +8,8 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
+@class COPlayer;
+
 @interface COPlayerTest : SenTestCase
 
 @end
