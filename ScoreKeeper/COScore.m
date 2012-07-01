@@ -22,4 +22,16 @@
     return self;
 }
 
+- (void)addPoint {
+    points++;
+}
+
+- (void)subtractPoint {
+    if (points == 0) {
+        return;
+    }
+    
+    points--;
+}
+
 @end

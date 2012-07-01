@@ -20,4 +20,7 @@
 
 - (id)initWithPlayer:(COPlayer *)shooter;
 
+- (void)addPoint;
+- (void)subtractPoint;
+
 @end
