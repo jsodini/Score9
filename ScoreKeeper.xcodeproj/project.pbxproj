@@ -24,6 +24,9 @@
 		6AFC38F115A0322700AF79C7 /* COMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFC38F015A0322700AF79C7 /* COMatch.m */; };
 		6AFC38F215A0322700AF79C7 /* COMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFC38F015A0322700AF79C7 /* COMatch.m */; };
 		6AFC38F615A032AD00AF79C7 /* COMatchTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFC38F515A032AD00AF79C7 /* COMatchTest.m */; };
+		6AFC38F915A0335900AF79C7 /* COScore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFC38F815A0335900AF79C7 /* COScore.m */; };
+		6AFC38FA15A0335900AF79C7 /* COScore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFC38F815A0335900AF79C7 /* COScore.m */; };
+		6AFC38FD15A0347600AF79C7 /* COScoreTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFC38FC15A0347600AF79C7 /* COScoreTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,10 @@
 		6AFC38F015A0322700AF79C7 /* COMatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMatch.m; sourceTree = "<group>"; };
 		6AFC38F415A032AD00AF79C7 /* COMatchTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMatchTest.h; sourceTree = "<group>"; };
 		6AFC38F515A032AD00AF79C7 /* COMatchTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMatchTest.m; sourceTree = "<group>"; };
+		6AFC38F715A0335800AF79C7 /* COScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COScore.h; sourceTree = "<group>"; };
+		6AFC38F815A0335900AF79C7 /* COScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COScore.m; sourceTree = "<group>"; };
+		6AFC38FB15A0347600AF79C7 /* COScoreTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COScoreTest.h; sourceTree = "<group>"; };
+		6AFC38FC15A0347600AF79C7 /* COScoreTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COScoreTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +132,8 @@
 				6AB072D1159AEE6E00A2D137 /* COPlayer.h */,
 				6AB072D2159AEE6E00A2D137 /* COPlayer.m */,
 				6AFC38EF15A0322700AF79C7 /* COMatch.h */,
+				6AFC38F715A0335800AF79C7 /* COScore.h */,
+				6AFC38F815A0335900AF79C7 /* COScore.m */,
 				6AFC38F015A0322700AF79C7 /* COMatch.m */,
 				6AB072A9159AEDAA00A2D137 /* Supporting Files */,
 			);
@@ -151,6 +160,8 @@
 				6AB072D6159AEEBB00A2D137 /* COPlayerTest.m */,
 				6AFC38F415A032AD00AF79C7 /* COMatchTest.h */,
 				6AFC38F515A032AD00AF79C7 /* COMatchTest.m */,
+				6AFC38FB15A0347600AF79C7 /* COScoreTest.h */,
+				6AFC38FC15A0347600AF79C7 /* COScoreTest.m */,
 				6AB072C1159AEDAA00A2D137 /* Supporting Files */,
 			);
 			path = ScoreKeeperTests;
@@ -276,6 +287,7 @@
 				6AB072B3159AEDAA00A2D137 /* COAppDelegate.m in Sources */,
 				6AB072D3159AEE6E00A2D137 /* COPlayer.m in Sources */,
 				6AFC38F115A0322700AF79C7 /* COMatch.m in Sources */,
+				6AFC38F915A0335900AF79C7 /* COScore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +300,8 @@
 				6AB072D7159AEEBB00A2D137 /* COPlayerTest.m in Sources */,
 				6AFC38F215A0322700AF79C7 /* COMatch.m in Sources */,
 				6AFC38F615A032AD00AF79C7 /* COMatchTest.m in Sources */,
+				6AFC38FA15A0335900AF79C7 /* COScore.m in Sources */,
+				6AFC38FD15A0347600AF79C7 /* COScoreTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
