@@ -7,6 +7,7 @@
 //
 
 #import "COScore.h"
+#import "COPlayer.h"
 
 @implementation COScore
 
