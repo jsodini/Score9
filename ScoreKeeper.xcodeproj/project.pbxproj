@@ -21,6 +21,9 @@
 		6AB072D3159AEE6E00A2D137 /* COPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB072D2159AEE6E00A2D137 /* COPlayer.m */; };
 		6AB072D4159AEE6E00A2D137 /* COPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB072D2159AEE6E00A2D137 /* COPlayer.m */; };
 		6AB072D7159AEEBB00A2D137 /* COPlayerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB072D6159AEEBB00A2D137 /* COPlayerTest.m */; };
+		6AFC38F115A0322700AF79C7 /* COMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFC38F015A0322700AF79C7 /* COMatch.m */; };
+		6AFC38F215A0322700AF79C7 /* COMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFC38F015A0322700AF79C7 /* COMatch.m */; };
+		6AFC38F615A032AD00AF79C7 /* COMatchTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFC38F515A032AD00AF79C7 /* COMatchTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,10 @@
 		6AB072D2159AEE6E00A2D137 /* COPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COPlayer.m; sourceTree = "<group>"; };
 		6AB072D5159AEEBB00A2D137 /* COPlayerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COPlayerTest.h; sourceTree = "<group>"; };
 		6AB072D6159AEEBB00A2D137 /* COPlayerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COPlayerTest.m; sourceTree = "<group>"; };
+		6AFC38EF15A0322700AF79C7 /* COMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMatch.h; sourceTree = "<group>"; };
+		6AFC38F015A0322700AF79C7 /* COMatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMatch.m; sourceTree = "<group>"; };
+		6AFC38F415A032AD00AF79C7 /* COMatchTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMatchTest.h; sourceTree = "<group>"; };
+		6AFC38F515A032AD00AF79C7 /* COMatchTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMatchTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +124,8 @@
 				6AB072B2159AEDAA00A2D137 /* COAppDelegate.m */,
 				6AB072D1159AEE6E00A2D137 /* COPlayer.h */,
 				6AB072D2159AEE6E00A2D137 /* COPlayer.m */,
+				6AFC38EF15A0322700AF79C7 /* COMatch.h */,
+				6AFC38F015A0322700AF79C7 /* COMatch.m */,
 				6AB072A9159AEDAA00A2D137 /* Supporting Files */,
 			);
 			path = ScoreKeeper;
@@ -140,6 +149,8 @@
 				6AB072C7159AEDAA00A2D137 /* ScoreKeeperTests.m */,
 				6AB072D5159AEEBB00A2D137 /* COPlayerTest.h */,
 				6AB072D6159AEEBB00A2D137 /* COPlayerTest.m */,
+				6AFC38F415A032AD00AF79C7 /* COMatchTest.h */,
+				6AFC38F515A032AD00AF79C7 /* COMatchTest.m */,
 				6AB072C1159AEDAA00A2D137 /* Supporting Files */,
 			);
 			path = ScoreKeeperTests;
@@ -264,6 +275,7 @@
 				6AB072AF159AEDAA00A2D137 /* main.m in Sources */,
 				6AB072B3159AEDAA00A2D137 /* COAppDelegate.m in Sources */,
 				6AB072D3159AEE6E00A2D137 /* COPlayer.m in Sources */,
+				6AFC38F115A0322700AF79C7 /* COMatch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +286,8 @@
 				6AB072C8159AEDAA00A2D137 /* ScoreKeeperTests.m in Sources */,
 				6AB072D4159AEE6E00A2D137 /* COPlayer.m in Sources */,
 				6AB072D7159AEEBB00A2D137 /* COPlayerTest.m in Sources */,
+				6AFC38F215A0322700AF79C7 /* COMatch.m in Sources */,
+				6AFC38F615A032AD00AF79C7 /* COMatchTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +441,7 @@
 				6AB072CD159AEDAA00A2D137 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6AB072CE159AEDAA00A2D137 /* Build configuration list for PBXNativeTarget "ScoreKeeperTests" */ = {
 			isa = XCConfigurationList;
@@ -435,6 +450,7 @@
 				6AB072D0159AEDAA00A2D137 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
