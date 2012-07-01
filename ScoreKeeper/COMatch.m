@@ -7,7 +7,21 @@
 //
 
 #import "COMatch.h"
+#import "COPlayer.h"
+#import "COScore.h"
 
 @implementation COMatch
+
+@synthesize playerOneScore;
+@synthesize playerTwoScore;
+
+- (id)initWithPlayerOne:(COPlayer *)playerOne andPlayerTwo:(COPlayer *)playerTwo {
+    if (self = [super init]) {
+        playerOneScore = [[COScore alloc] initWithPlayer:playerOne];
+        playerTwoScore = [[COScore alloc] initWithPlayer:playerTwo];
+    }
+    
+    return self;
+}
 
 @end

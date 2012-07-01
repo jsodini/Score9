@@ -8,6 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
-@interface COMatch : NSObject
+@class COScore;
+@class COPlayer;
+
+@interface COMatch : NSObject {
+    COScore *playerOneScore;
+    COScore *playerTwoScore;
+}
+
+- (id)initWithPlayerOne:(COPlayer *)playerOne andPlayerTwo:(COPlayer *)playerTwo;
+
+@property (readonly, retain) COScore *playerOneScore;
+@property (readonly, retain) COScore *playerTwoScore;
 
 @end
