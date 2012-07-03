@@ -23,4 +23,6 @@
 - (void)addPoint;
 - (void)subtractPoint;
 
+- (NSUInteger)pointsToWin;
+
 @end
