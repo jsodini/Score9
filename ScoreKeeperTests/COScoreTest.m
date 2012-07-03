@@ -30,6 +30,105 @@
     STAssertEquals((NSUInteger)1, score.points, @"1 != %d", score.points);
 }
 
+- (void)testIncreasesPointsByOneDoesNothingWhenPointsAreMaxedAtSkillLevelIsOne {
+    COPlayer *player = [[COPlayer alloc] initWithName:@"Test" andSkillLevel:1];
+    COScore  *score  = [[COScore  alloc] initWithPlayer:player];
+
+    NSUInteger pointsToWin = 14;
+    [score setPoints:pointsToWin];
+    [score addPoint];
+
+    STAssertEquals(pointsToWin, score.points, @"%d != %d", pointsToWin, score.points);
+}
+
+- (void)testIncreasesPointsByOneDoesNothingWhenPointsAreMaxedAtSkillLevelIsTwo {
+    COPlayer *player = [[COPlayer alloc] initWithName:@"Test" andSkillLevel:2];
+    COScore  *score  = [[COScore  alloc] initWithPlayer:player];
+    
+    NSUInteger pointsToWin = 19;
+    [score setPoints:pointsToWin];
+    [score addPoint];
+    
+    STAssertEquals(pointsToWin, score.points, @"%d != %d", pointsToWin, score.points);
+}
+
+- (void)testIncreasesPointsByOneDoesNothingWhenPointsAreMaxedAtSkillLevelIsThree {
+    COPlayer *player = [[COPlayer alloc] initWithName:@"Test" andSkillLevel:3];
+    COScore  *score  = [[COScore  alloc] initWithPlayer:player];
+    
+    NSUInteger pointsToWin = 25;
+    [score setPoints:pointsToWin];
+    [score addPoint];
+    
+    STAssertEquals(pointsToWin, score.points, @"%d != %d", pointsToWin, score.points);
+}
+
+- (void)testIncreasesPointsByOneDoesNothingWhenPointsAreMaxedAtSkillLevelIsFour {
+    COPlayer *player = [[COPlayer alloc] initWithName:@"Test" andSkillLevel:4];
+    COScore  *score  = [[COScore  alloc] initWithPlayer:player];
+    
+    NSUInteger pointsToWin = 31;
+    [score setPoints:pointsToWin];
+    [score addPoint];
+    
+    STAssertEquals(pointsToWin, score.points, @"%d != %d", pointsToWin, score.points);
+}
+
+- (void)testIncreasesPointsByOneDoesNothingWhenPointsAreMaxedAtSkillLevelIsFive {
+    COPlayer *player = [[COPlayer alloc] initWithName:@"Test" andSkillLevel:5];
+    COScore  *score  = [[COScore  alloc] initWithPlayer:player];
+    
+    NSUInteger pointsToWin = 38;
+    [score setPoints:pointsToWin];
+    [score addPoint];
+    
+    STAssertEquals(pointsToWin, score.points, @"%d != %d", pointsToWin, score.points);
+}
+
+- (void)testIncreasesPointsByOneDoesNothingWhenPointsAreMaxedAtSkillLevelIsSix {
+    COPlayer *player = [[COPlayer alloc] initWithName:@"Test" andSkillLevel:6];
+    COScore  *score  = [[COScore  alloc] initWithPlayer:player];
+    
+    NSUInteger pointsToWin = 46;
+    [score setPoints:pointsToWin];
+    [score addPoint];
+    
+    STAssertEquals(pointsToWin, score.points, @"%d != %d", pointsToWin, score.points);
+}
+
+- (void)testIncreasesPointsByOneDoesNothingWhenPointsAreMaxedAtSkillLevelIsSeven {
+    COPlayer *player = [[COPlayer alloc] initWithName:@"Test" andSkillLevel:7];
+    COScore  *score  = [[COScore  alloc] initWithPlayer:player];
+    
+    NSUInteger pointsToWin = 55;
+    [score setPoints:pointsToWin];
+    [score addPoint];
+    
+    STAssertEquals(pointsToWin, score.points, @"%d != %d", pointsToWin, score.points);
+}
+
+- (void)testIncreasesPointsByOneDoesNothingWhenPointsAreMaxedAtSkillLevelIsEight {
+    COPlayer *player = [[COPlayer alloc] initWithName:@"Test" andSkillLevel:8];
+    COScore  *score  = [[COScore  alloc] initWithPlayer:player];
+    
+    NSUInteger pointsToWin = 65;
+    [score setPoints:pointsToWin];
+    [score addPoint];
+    
+    STAssertEquals(pointsToWin, score.points, @"%d != %d", pointsToWin, score.points);
+}
+
+- (void)testIncreasesPointsByOneDoesNothingWhenPointsAreMaxedAtSkillLevelIsNine {
+    COPlayer *player = [[COPlayer alloc] initWithName:@"Test" andSkillLevel:9];
+    COScore  *score  = [[COScore  alloc] initWithPlayer:player];
+    
+    NSUInteger pointsToWin = 75;
+    [score setPoints:pointsToWin];
+    [score addPoint];
+    
+    STAssertEquals(pointsToWin, score.points, @"%d != %d", pointsToWin, score.points);
+}
+
 - (void)testDecreasesPointsByOneWhenSubtractPointCalled {
     COPlayer *player = [[COPlayer alloc] initWithName:@"Test" andSkillLevel:4];
     COScore  *score  = [[COScore  alloc] initWithPlayer:player];

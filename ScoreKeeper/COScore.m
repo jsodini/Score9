@@ -24,6 +24,10 @@
 }
 
 - (void)addPoint {
+    if ([self pointsToWin] == points) {
+        return;
+    }
+
     points++;
 }
 
