@@ -21,6 +21,9 @@
 		6AB072D3159AEE6E00A2D137 /* COPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB072D2159AEE6E00A2D137 /* COPlayer.m */; };
 		6AB072D4159AEE6E00A2D137 /* COPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB072D2159AEE6E00A2D137 /* COPlayer.m */; };
 		6AB072D7159AEEBB00A2D137 /* COPlayerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB072D6159AEEBB00A2D137 /* COPlayerTest.m */; };
+		6AE5275015A4195000CE1D2E /* COMatchScore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE5274F15A4195000CE1D2E /* COMatchScore.m */; };
+		6AE5275115A4195000CE1D2E /* COMatchScore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE5274F15A4195000CE1D2E /* COMatchScore.m */; };
+		6AE5275515A41AC100CE1D2E /* COMatchScoreTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE5275415A41AC100CE1D2E /* COMatchScoreTest.m */; };
 		6AFC38F115A0322700AF79C7 /* COMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFC38F015A0322700AF79C7 /* COMatch.m */; };
 		6AFC38F215A0322700AF79C7 /* COMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFC38F015A0322700AF79C7 /* COMatch.m */; };
 		6AFC38F615A032AD00AF79C7 /* COMatchTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFC38F515A032AD00AF79C7 /* COMatchTest.m */; };
@@ -60,6 +63,10 @@
 		6AB072D2159AEE6E00A2D137 /* COPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COPlayer.m; sourceTree = "<group>"; };
 		6AB072D5159AEEBB00A2D137 /* COPlayerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COPlayerTest.h; sourceTree = "<group>"; };
 		6AB072D6159AEEBB00A2D137 /* COPlayerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COPlayerTest.m; sourceTree = "<group>"; };
+		6AE5274E15A4195000CE1D2E /* COMatchScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMatchScore.h; sourceTree = "<group>"; };
+		6AE5274F15A4195000CE1D2E /* COMatchScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMatchScore.m; sourceTree = "<group>"; };
+		6AE5275315A41AC100CE1D2E /* COMatchScoreTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMatchScoreTest.h; sourceTree = "<group>"; };
+		6AE5275415A41AC100CE1D2E /* COMatchScoreTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMatchScoreTest.m; sourceTree = "<group>"; };
 		6AFC38EF15A0322700AF79C7 /* COMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMatch.h; sourceTree = "<group>"; };
 		6AFC38F015A0322700AF79C7 /* COMatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMatch.m; sourceTree = "<group>"; };
 		6AFC38F415A032AD00AF79C7 /* COMatchTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMatchTest.h; sourceTree = "<group>"; };
@@ -133,6 +140,8 @@
 				6AB072D2159AEE6E00A2D137 /* COPlayer.m */,
 				6AFC38EF15A0322700AF79C7 /* COMatch.h */,
 				6AFC38F015A0322700AF79C7 /* COMatch.m */,
+				6AE5274E15A4195000CE1D2E /* COMatchScore.h */,
+				6AE5274F15A4195000CE1D2E /* COMatchScore.m */,
 				6AFC38F715A0335800AF79C7 /* COScore.h */,
 				6AFC38F815A0335900AF79C7 /* COScore.m */,
 				6AB072A9159AEDAA00A2D137 /* Supporting Files */,
@@ -160,6 +169,8 @@
 				6AB072D6159AEEBB00A2D137 /* COPlayerTest.m */,
 				6AFC38F415A032AD00AF79C7 /* COMatchTest.h */,
 				6AFC38F515A032AD00AF79C7 /* COMatchTest.m */,
+				6AE5275315A41AC100CE1D2E /* COMatchScoreTest.h */,
+				6AE5275415A41AC100CE1D2E /* COMatchScoreTest.m */,
 				6AFC38FB15A0347600AF79C7 /* COScoreTest.h */,
 				6AFC38FC15A0347600AF79C7 /* COScoreTest.m */,
 				6AB072C1159AEDAA00A2D137 /* Supporting Files */,
@@ -288,6 +299,7 @@
 				6AB072D3159AEE6E00A2D137 /* COPlayer.m in Sources */,
 				6AFC38F115A0322700AF79C7 /* COMatch.m in Sources */,
 				6AFC38F915A0335900AF79C7 /* COScore.m in Sources */,
+				6AE5275015A4195000CE1D2E /* COMatchScore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +314,8 @@
 				6AFC38F615A032AD00AF79C7 /* COMatchTest.m in Sources */,
 				6AFC38FA15A0335900AF79C7 /* COScore.m in Sources */,
 				6AFC38FD15A0347600AF79C7 /* COScoreTest.m in Sources */,
+				6AE5275115A4195000CE1D2E /* COMatchScore.m in Sources */,
+				6AE5275515A41AC100CE1D2E /* COMatchScoreTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
