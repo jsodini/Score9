@@ -11,9 +11,6 @@
 
 @implementation COScore
 
-@synthesize player;
-@synthesize points;
-
 - (id)initWithPlayer:(COPlayer *)shooter {
     if (self = [super init]) {
         [self setPlayer:shooter];
@@ -24,28 +21,28 @@
 }
 
 - (void)addPoint {
-    if ([self pointsToWin] == points) {
+    if ([self pointsToWin] == _points) {
         return;
     }
 
-    points++;
+    _points++;
 }
 
 - (void)subtractPoint {
-    if (points == 0) {
+    if (_points == 0) {
         return;
     }
     
-    points--;
+    _points--;
 }
 
 - (NSUInteger)pointsToWin {
-    if (player.skillLevel < 1 || player.skillLevel > 9) {
+    if ([_player skillLevel] < 1 || [_player skillLevel] > 9) {
         [NSException raise:@"Invalid Skill Level"
-                    format:@"%d is not a valid skill level", player.skillLevel];
+                    format:@"%d is not a valid skill level", [_player skillLevel]];
     }
 
-    switch (player.skillLevel) {
+    switch ([_player skillLevel]) {
         case 1:
             return 14;
         case 2:

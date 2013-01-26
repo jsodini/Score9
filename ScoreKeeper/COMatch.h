@@ -11,10 +11,7 @@
 @class COScore;
 @class COPlayer;
 
-@interface COMatch : NSObject {
-    COScore *playerOneScore;
-    COScore *playerTwoScore;
-}
+@interface COMatch : NSObject
 
 - (id)initWithPlayerOne:(COPlayer *)playerOne andPlayerTwo:(COPlayer *)playerTwo;
 

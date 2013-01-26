@@ -8,10 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface COPlayer : NSObject {
-	NSString *name;
-	NSUInteger skillLevel;
-}
+@interface COPlayer : NSObject
 
 @property (readwrite, retain) NSString *name;
 @property (readwrite, assign) NSUInteger skillLevel;

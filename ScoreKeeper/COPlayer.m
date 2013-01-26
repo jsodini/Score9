@@ -10,9 +10,6 @@
 
 @implementation COPlayer
 
-@synthesize name;
-@synthesize skillLevel;
-
 - (id)init {
 	if (self = [super init]) {
 		return [self initWithName:@"" andSkillLevel:0];

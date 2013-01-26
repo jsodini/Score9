@@ -8,10 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface COMatchScore : NSObject {
-    NSUInteger minimum;
-    NSUInteger maximum;
-}
+@interface COMatchScore : NSObject
 
 @property (readonly, nonatomic) NSUInteger minimum;
 @property (readonly, nonatomic) NSUInteger maximum;

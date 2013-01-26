@@ -10,13 +10,10 @@
 
 @implementation COMatchScore
 
-@synthesize minimum;
-@synthesize maximum;
-
 - (id)initWithMinimum:(NSUInteger)min andMaximum:(NSUInteger)max {
     if (self = [super init]) {
-        minimum = min;
-        maximum = max;
+        _minimum = min;
+        _maximum = max;
     }
     
     return self;

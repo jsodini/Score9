@@ -12,13 +12,10 @@
 
 @implementation COMatch
 
-@synthesize playerOneScore;
-@synthesize playerTwoScore;
-
 - (id)initWithPlayerOne:(COPlayer *)playerOne andPlayerTwo:(COPlayer *)playerTwo {
     if (self = [super init]) {
-        playerOneScore = [[COScore alloc] initWithPlayer:playerOne];
-        playerTwoScore = [[COScore alloc] initWithPlayer:playerTwo];
+        _playerOneScore = [[COScore alloc] initWithPlayer:playerOne];
+        _playerTwoScore = [[COScore alloc] initWithPlayer:playerTwo];
     }
     
     return self;

@@ -10,10 +10,7 @@
 
 @class COPlayer;
 
-@interface COScore : NSObject {
-    COPlayer *player;
-    NSUInteger points;
-}
+@interface COScore : NSObject
 
 @property (readwrite, retain) COPlayer *player;
 @property (readwrite, assign) NSUInteger points;
