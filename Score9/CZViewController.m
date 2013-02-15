@@ -24,4 +24,33 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)skillLevelChange:(id)sender {
+    switch ([sender tag]) {
+        case 1:
+            _playerOneSkillLevel--;
+            break;
+        case 2:
+            _playerOneSkillLevel++;
+            break;
+        case 3:
+            _playerTwoSkillLevel--;
+            break;
+        case 4:
+            _playerTwoSkillLevel++;
+            break;
+    }
+    
+    // Label
+    
+    [_playerOneSkillLabel setText:[[NSNumber numberWithInt:_playerOneSkillLevel] stringValue]];
+    [_playerTwoSkillLabel setText:[[NSNumber numberWithInt:_playerTwoSkillLevel] stringValue]];
+    
+    // Buttons
+    
+    [_playerOneSkillSubtractButton setEnabled:(_playerOneSkillLevel == 1) ? NO : YES];
+    [_playerTwoSkillSubtractButton setEnabled:(_playerTwoSkillLevel == 1) ? NO : YES];
+    [_playerOneSkillAddButton      setEnabled:(_playerTwoSkillLevel == 9) ? NO : YES];
+    [_playerTwoSkillAddButton      setEnabled:(_playerOneSkillLevel == 9) ? NO : YES];
+}
+
 @end

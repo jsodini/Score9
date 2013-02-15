@@ -14,6 +14,7 @@
 // Player One
 //
 
+@property (assign, nonatomic) NSUInteger playerOneSkillLevel;
 @property (strong, nonatomic) IBOutlet UILabel *playerOneNextPointLabel;
 @property (strong, nonatomic) IBOutlet UILabel *playerOneScoreLabel;
 @property (strong, nonatomic) IBOutlet UILabel *playerOneWinLabel;
@@ -29,6 +30,7 @@
 // Player Two
 //
 
+@property (assign, nonatomic) NSUInteger playerTwoSkillLevel;
 @property (strong, nonatomic) IBOutlet UILabel *playerTwoNextPointLabel;
 @property (strong, nonatomic) IBOutlet UILabel *playerTwoScoreLabel;
 @property (strong, nonatomic) IBOutlet UILabel *playerTwoWinLabel;
@@ -39,5 +41,11 @@
 @property (strong, nonatomic) IBOutlet UIButton *playerTwoSkillSubtractButton;
 @property (strong, nonatomic) IBOutlet UIProgressView *playerTwoNextPointBar;
 @property (strong, nonatomic) IBOutlet UIProgressView *playerTwoWinBar;
+
+//
+// Actions
+//
+
+- (IBAction)skillLevelChange:(id)sender;
 
 @end
