@@ -119,9 +119,9 @@
 			children = (
 				6A78BC2716CE2D70004D28CF /* CZAppDelegate.h */,
 				6A78BC2816CE2D70004D28CF /* CZAppDelegate.m */,
-				6A78BC3016CE2D70004D28CF /* MainStoryboard.storyboard */,
 				6A78BC3316CE2D70004D28CF /* CZViewController.h */,
 				6A78BC3416CE2D70004D28CF /* CZViewController.m */,
+				6A78BC3016CE2D70004D28CF /* MainStoryboard.storyboard */,
 				6A78BC1F16CE2D70004D28CF /* Supporting Files */,
 			);
 			path = Score9;
@@ -454,6 +454,7 @@
 				6A78BC4F16CE2D70004D28CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A78BC5016CE2D70004D28CF /* Build configuration list for PBXNativeTarget "Score9Tests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +463,7 @@
 				6A78BC5216CE2D70004D28CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
