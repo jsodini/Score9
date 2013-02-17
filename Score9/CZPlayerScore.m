@@ -32,6 +32,18 @@
     }
 }
 
+- (void)increaseScore {
+    if ([self currentScore] < [self pointsToWin]) {
+        [self setCurrentScore:[self currentScore] + 1];
+    }
+}
+
+- (void)decreaseScore {
+    if ([self currentScore] > 1) {
+        [self setCurrentScore:[self currentScore] - 1];
+    }
+}
+
 - (NSUInteger)pointsToWin {
     switch ([self skillLevel]) {
         case 1:

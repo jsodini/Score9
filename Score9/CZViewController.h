@@ -49,5 +49,6 @@
 //
 
 - (IBAction)skillLevelChange:(id)sender;
+- (IBAction)pointChange:(id)sender;
 
 @end

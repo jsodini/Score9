@@ -50,9 +50,10 @@
     // Score
     //
     
+    [[self playerOneScoreLabel] setText:[[NSNumber numberWithInt:[[self playerOneScore] currentScore]] stringValue]];
+    [[self playerTwoScoreLabel] setText:[[NSNumber numberWithInt:[[self playerTwoScore] currentScore]] stringValue]];
     [[self playerOneWinLabel] setText:[[NSNumber numberWithInt:[[self playerOneScore] pointsToWin]] stringValue]];
     [[self playerTwoWinLabel] setText:[[NSNumber numberWithInt:[[self playerTwoScore] pointsToWin]] stringValue]];
-    
     [[self playerOneNextPointLabel] setText:[[NSNumber numberWithInt:[[self playerOneScore] nextPoint]] stringValue]];
     [[self playerTwoNextPointLabel] setText:[[NSNumber numberWithInt:[[self playerTwoScore] nextPoint]] stringValue]];
 }
@@ -70,6 +71,25 @@
             break;
         case 4:
             [[self playerTwoScore] increaseSkillLevel];
+    }
+    
+    [self updateUI];
+}
+
+- (IBAction)pointChange:(id)sender {
+    switch ([sender tag]) {
+        case 1:
+            [[self playerOneScore] decreaseScore];
+            break;
+        case 2:
+            [[self playerOneScore] increaseScore];
+            break;
+        case 3:
+            [[self playerTwoScore] decreaseScore];
+            break;
+        case 4:
+            [[self playerTwoScore] increaseScore];
+            break;
     }
     
     [self updateUI];

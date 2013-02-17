@@ -45,4 +45,32 @@
     STAssertEquals((NSUInteger)9, [playerScore skillLevel], @"9 != %ld", [playerScore skillLevel]);
 }
 
+- (void)testReturnsOneWhenDecreasingScoreOfOne {
+    CZPlayerScore *playerScore = [[CZPlayerScore alloc] initWithSkillLevel:1];
+    [playerScore setCurrentScore:1];
+    [playerScore decreaseScore];
+    STAssertEquals((NSUInteger)1, [playerScore currentScore], @"1 != %ld", [playerScore currentScore]);
+}
+
+- (void)testReturnsOneWhenDecreasingScoreOfTwo {
+    CZPlayerScore *playerScore = [[CZPlayerScore alloc] initWithSkillLevel:1];
+    [playerScore setCurrentScore:2];
+    [playerScore decreaseScore];
+    STAssertEquals((NSUInteger)1, [playerScore currentScore], @"1 != %ld", [playerScore currentScore]);
+}
+
+- (void)testReturnsFourteenWhenIncreasingScoreOfFourteen {
+    CZPlayerScore *playerScore = [[CZPlayerScore alloc] initWithSkillLevel:1];
+    [playerScore setCurrentScore:14];
+    [playerScore increaseScore];
+    STAssertEquals((NSUInteger)14, [playerScore currentScore], @"14 != %ld", [playerScore currentScore]);
+}
+
+- (void)testReturnsFourteenWhenIncreasingScoreOfThirteen {
+    CZPlayerScore *playerScore = [[CZPlayerScore alloc] initWithSkillLevel:1];
+    [playerScore setCurrentScore:13];
+    [playerScore increaseScore];
+    STAssertEquals((NSUInteger)14, [playerScore currentScore], @"14 != %ld", [playerScore currentScore]);
+}
+
 @end
