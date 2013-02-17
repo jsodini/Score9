@@ -24,6 +24,20 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)updateUI {
+    // Label
+    
+    [_playerOneSkillLabel setText:[[NSNumber numberWithInt:_playerOneSkillLevel] stringValue]];
+    [_playerTwoSkillLabel setText:[[NSNumber numberWithInt:_playerTwoSkillLevel] stringValue]];
+    
+    // Buttons
+    
+    [_playerOneSkillSubtractButton setEnabled:(_playerOneSkillLevel > 1) ? YES : NO];
+    [_playerTwoSkillSubtractButton setEnabled:(_playerTwoSkillLevel > 1) ? YES : NO];
+    [_playerOneSkillAddButton      setEnabled:(_playerOneSkillLevel < 9) ? YES : NO];
+    [_playerTwoSkillAddButton      setEnabled:(_playerTwoSkillLevel < 9) ? YES : NO];
+}
+
 - (IBAction)skillLevelChange:(id)sender {
     switch ([sender tag]) {
         case 1:
@@ -40,17 +54,7 @@
             break;
     }
         
-    // Label
-    
-    [_playerOneSkillLabel setText:[[NSNumber numberWithInt:_playerOneSkillLevel] stringValue]];
-    [_playerTwoSkillLabel setText:[[NSNumber numberWithInt:_playerTwoSkillLevel] stringValue]];
-    
-    // Buttons
-    
-    [_playerOneSkillSubtractButton setEnabled:(_playerOneSkillLevel > 1) ? YES : NO];
-    [_playerTwoSkillSubtractButton setEnabled:(_playerTwoSkillLevel > 1) ? YES : NO];
-    [_playerOneSkillAddButton      setEnabled:(_playerOneSkillLevel < 9) ? YES : NO];
-    [_playerTwoSkillAddButton      setEnabled:(_playerTwoSkillLevel < 9) ? YES : NO];
+    [self updateUI];
 }
 
 @end

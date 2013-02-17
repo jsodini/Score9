@@ -48,4 +48,6 @@
 
 - (IBAction)skillLevelChange:(id)sender;
 
+- (void)updateUI;
+
 @end
