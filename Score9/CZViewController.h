@@ -8,13 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+#import "CZPlayerScore.h"
+
 @interface CZViewController : UIViewController
 
 //
 // Player One
 //
 
-@property (assign, nonatomic) NSUInteger playerOneSkillLevel;
+@property (readonly, nonatomic) CZPlayerScore *playerOneScore;
 @property (strong, nonatomic) IBOutlet UILabel *playerOneNextPointLabel;
 @property (strong, nonatomic) IBOutlet UILabel *playerOneScoreLabel;
 @property (strong, nonatomic) IBOutlet UILabel *playerOneWinLabel;
@@ -30,7 +32,7 @@
 // Player Two
 //
 
-@property (assign, nonatomic) NSUInteger playerTwoSkillLevel;
+@property (readonly, nonatomic) CZPlayerScore *playerTwoScore;
 @property (strong, nonatomic) IBOutlet UILabel *playerTwoNextPointLabel;
 @property (strong, nonatomic) IBOutlet UILabel *playerTwoScoreLabel;
 @property (strong, nonatomic) IBOutlet UILabel *playerTwoWinLabel;
