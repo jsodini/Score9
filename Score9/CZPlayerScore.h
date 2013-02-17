@@ -19,5 +19,6 @@
 - (void)decreaseSkillLevel;
 
 - (NSUInteger)pointsToWin;
+- (NSUInteger)nextPoint;
 
 @end

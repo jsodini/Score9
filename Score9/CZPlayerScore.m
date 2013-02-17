@@ -7,6 +7,7 @@
 //
 
 #import "CZPlayerScore.h"
+#import "CZPointsTable.h"
 
 @implementation CZPlayerScore
 
@@ -54,6 +55,20 @@
         default:
             return 0;
     }
+}
+
+- (NSUInteger)nextPoint {
+    PointsTable pointsTable = [CZPointsTable PointsTableWithSkillLevel:[self skillLevel]];
+    
+    NSUInteger points = pointsTable([self currentScore]);
+    
+    for (NSUInteger score = [self currentScore] + 1; score < [self pointsToWin]; score++) {        
+        if (pointsTable(score) > points) {
+            return score - [self currentScore];
+        }
+    }
+    
+    return [self pointsToWin] - [self currentScore];
 }
 
 @end
