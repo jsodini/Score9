@@ -23,5 +23,6 @@
 
 - (NSUInteger)pointsToWin;
 - (NSUInteger)nextPoint;
+- (NSUInteger)remainingPoints;
 
 @end

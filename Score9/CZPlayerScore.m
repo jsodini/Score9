@@ -39,7 +39,7 @@
 }
 
 - (void)decreaseScore {
-    if ([self currentScore] > 1) {
+    if ([self currentScore] > 0) {
         [self setCurrentScore:[self currentScore] - 1];
     }
 }
@@ -80,6 +80,10 @@
         }
     }
     
+    return [self remainingPoints];
+}
+
+- (NSUInteger)remainingPoints {
     return [self pointsToWin] - [self currentScore];
 }
 

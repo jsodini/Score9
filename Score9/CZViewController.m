@@ -56,6 +56,8 @@
     [[self playerTwoWinLabel] setText:[[NSNumber numberWithInt:[[self playerTwoScore] pointsToWin]] stringValue]];
     [[self playerOneNextPointLabel] setText:[[NSNumber numberWithInt:[[self playerOneScore] nextPoint]] stringValue]];
     [[self playerTwoNextPointLabel] setText:[[NSNumber numberWithInt:[[self playerTwoScore] nextPoint]] stringValue]];
+    [[self playerOneRemaining] setText:[[NSNumber numberWithInt:[[self playerOneScore] remainingPoints]] stringValue]];
+    [[self playerTwoRemaining] setText:[[NSNumber numberWithInt:[[self playerTwoScore] remainingPoints]] stringValue]];
 }
 
 - (IBAction)skillLevelChange:(id)sender {

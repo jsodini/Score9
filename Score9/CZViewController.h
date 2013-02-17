@@ -21,6 +21,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *playerOneScoreLabel;
 @property (strong, nonatomic) IBOutlet UILabel *playerOneWinLabel;
 @property (strong, nonatomic) IBOutlet UILabel *playerOneSkillLabel;
+@property (strong, nonatomic) IBOutlet UILabel *playerOneRemaining;
 @property (strong, nonatomic) IBOutlet UIButton *playerOnePointAddButton;
 @property (strong, nonatomic) IBOutlet UIButton *playerOnePointSubtractButton;
 @property (strong, nonatomic) IBOutlet UIButton *playerOneSkillAddButton;
@@ -37,6 +38,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *playerTwoScoreLabel;
 @property (strong, nonatomic) IBOutlet UILabel *playerTwoWinLabel;
 @property (strong, nonatomic) IBOutlet UILabel *playerTwoSkillLabel;
+@property (strong, nonatomic) IBOutlet UILabel *playerTwoRemaining;
 @property (strong, nonatomic) IBOutlet UIButton *playerTwoPointAddButton;
 @property (strong, nonatomic) IBOutlet UIButton *playerTwoPointSubtractButton;
 @property (strong, nonatomic) IBOutlet UIButton *playerTwoSkillAddButton;
