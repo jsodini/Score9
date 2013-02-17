@@ -19,20 +19,16 @@
     return self;
 }
 
-- (NSUInteger)increaseSkillLevel {
+- (void)increaseSkillLevel {
     if ([self skillLevel] < 9) {
         [self setSkillLevel:[self skillLevel] + 1];
     }
-
-    return [self skillLevel];
 }
 
-- (NSUInteger)decreaseSkillLevel {    
+- (void)decreaseSkillLevel {
     if ([self skillLevel] > 1) {
         [self setSkillLevel:[self skillLevel] - 1];
     }
-    
-    return [self skillLevel];
 }
 
 @end

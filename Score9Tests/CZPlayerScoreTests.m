@@ -23,25 +23,25 @@
 
 - (void)testReturnsOneWhenDecreasingSkillOfOne {
     CZPlayerScore *playerScore = [[CZPlayerScore alloc] initWithSkillLevel:1];
-    STAssertEquals((NSUInteger)1, [playerScore decreaseSkillLevel], @"1 != %ld", [playerScore skillLevel]);
+    [playerScore decreaseSkillLevel];
     STAssertEquals((NSUInteger)1, [playerScore skillLevel], @"1 != %ld", [playerScore skillLevel]);
 }
 
 - (void)testReturnsTwoWhenDecreasingSkillOfThree {
     CZPlayerScore *playerScore = [[CZPlayerScore alloc] initWithSkillLevel:3];
-    STAssertEquals((NSUInteger)2, [playerScore decreaseSkillLevel], @"2 != %ld", [playerScore skillLevel]);
+    [playerScore decreaseSkillLevel];
     STAssertEquals((NSUInteger)2, [playerScore skillLevel], @"2 != %ld", [playerScore skillLevel]);
 }
 
 - (void)testReturnsNineWhenIncreasingSkillOfNine {
     CZPlayerScore *playerScore = [[CZPlayerScore alloc] initWithSkillLevel:9];
-    STAssertEquals((NSUInteger)9, [playerScore increaseSkillLevel], @"9 != %ld", [playerScore skillLevel]);
+    [playerScore increaseSkillLevel];
     STAssertEquals((NSUInteger)9, [playerScore skillLevel], @"9 != %ld", [playerScore skillLevel]);
 }
 
 - (void)testReturnsNineWhenIncreasingSkillOfEight {
     CZPlayerScore *playerScore = [[CZPlayerScore alloc] initWithSkillLevel:8];
-    STAssertEquals((NSUInteger)9, [playerScore increaseSkillLevel], @"9 != %ld", [playerScore skillLevel]);
+    [playerScore increaseSkillLevel];
     STAssertEquals((NSUInteger)9, [playerScore skillLevel], @"9 != %ld", [playerScore skillLevel]);
 }
 

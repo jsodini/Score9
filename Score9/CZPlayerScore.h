@@ -15,7 +15,7 @@
 
 - (id)initWithSkillLevel:(NSUInteger)skillLevel;
 
-- (NSUInteger)increaseSkillLevel;
-- (NSUInteger)decreaseSkillLevel;
+- (void)increaseSkillLevel;
+- (void)decreaseSkillLevel;
 
 @end
