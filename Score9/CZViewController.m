@@ -30,15 +30,15 @@
 - (void)updateUI {
     // Label
     
-    [_playerOneSkillLabel setText:[[NSNumber numberWithInt:[[self playerOneScore] skillLevel]] stringValue]];
-    [_playerTwoSkillLabel setText:[[NSNumber numberWithInt:[[self playerTwoScore] skillLevel]] stringValue]];
+    [[self playerOneSkillLabel] setText:[[NSNumber numberWithInt:[[self playerOneScore] skillLevel]] stringValue]];
+    [[self playerTwoSkillLabel] setText:[[NSNumber numberWithInt:[[self playerTwoScore] skillLevel]] stringValue]];
     
     // Buttons
     
-    [_playerOneSkillSubtractButton setEnabled:([[self playerOneScore] skillLevel] > 1) ? YES : NO];
-    [_playerTwoSkillSubtractButton setEnabled:([[self playerTwoScore] skillLevel] > 1) ? YES : NO];
-    [_playerOneSkillAddButton      setEnabled:([[self playerOneScore] skillLevel] < 9) ? YES : NO];
-    [_playerTwoSkillAddButton      setEnabled:([[self playerTwoScore] skillLevel] < 9) ? YES : NO];
+    [[self playerOneSkillSubtractButton] setEnabled:([[self playerOneScore] skillLevel] > 1) ? YES : NO];
+    [[self playerTwoSkillSubtractButton] setEnabled:([[self playerTwoScore] skillLevel] > 1) ? YES : NO];
+    [[self playerOneSkillAddButton]      setEnabled:([[self playerOneScore] skillLevel] < 9) ? YES : NO];
+    [[self playerTwoSkillAddButton]      setEnabled:([[self playerTwoScore] skillLevel] < 9) ? YES : NO];
 }
 
 - (IBAction)skillLevelChange:(id)sender {
