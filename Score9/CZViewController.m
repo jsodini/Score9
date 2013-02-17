@@ -45,6 +45,15 @@
     
     [[self playerOneSkillLabel] setText:[[NSNumber numberWithInt:playerOneSkillLevel] stringValue]];
     [[self playerTwoSkillLabel] setText:[[NSNumber numberWithInt:playerTwoSKillLevel] stringValue]];
+    
+    //
+    // Score
+    //
+    
+    [[self playerOneWinLabel] setText:[[NSNumber numberWithInt:[[self playerOneScore] pointsToWin]] stringValue]];
+    [[self playerTwoWinLabel] setText:[[NSNumber numberWithInt:[[self playerTwoScore] pointsToWin]] stringValue]];
+    
+    
 }
 
 - (IBAction)skillLevelChange:(id)sender {
