@@ -25,4 +25,6 @@
 - (NSUInteger)nextPoint;
 - (NSUInteger)remainingPoints;
 
+- (float)percentageComplete;
+
 @end

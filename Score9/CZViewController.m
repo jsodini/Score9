@@ -29,7 +29,7 @@
 
 - (void)updateUI {
     //
-    // Player Skill
+    // Skill
     //
     
     BOOL (^subSkillEnabled)(NSUInteger) = ^BOOL(NSUInteger skillLevel) { return (skillLevel > 1) ? YES : NO; };
@@ -58,6 +58,13 @@
     [[self playerTwoNextPointLabel] setText:[[NSNumber numberWithInt:[[self playerTwoScore] nextPoint]] stringValue]];
     [[self playerOneRemaining] setText:[[NSNumber numberWithInt:[[self playerOneScore] remainingPoints]] stringValue]];
     [[self playerTwoRemaining] setText:[[NSNumber numberWithInt:[[self playerTwoScore] remainingPoints]] stringValue]];
+    
+    //
+    // Progress
+    //
+    
+    [[self playerOneWinBar] setProgress:[[self playerOneScore] percentageComplete]];
+    [[self playerTwoWinBar] setProgress:[[self playerTwoScore] percentageComplete]];
 }
 
 - (IBAction)skillLevelChange:(id)sender {

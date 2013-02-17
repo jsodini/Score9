@@ -87,4 +87,8 @@
     return [self pointsToWin] - [self currentScore];
 }
 
+- (float)percentageComplete {
+    return [self currentScore] / ([self pointsToWin] * 1.0);
+}
+
 @end
