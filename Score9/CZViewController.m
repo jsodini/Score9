@@ -71,6 +71,7 @@
             break;
         case 4:
             [[self playerTwoScore] increaseSkillLevel];
+            break;
     }
     
     [self updateUI];
