@@ -39,7 +39,7 @@
             _playerTwoSkillLevel++;
             break;
     }
-    
+        
     // Label
     
     [_playerOneSkillLabel setText:[[NSNumber numberWithInt:_playerOneSkillLevel] stringValue]];
@@ -47,10 +47,10 @@
     
     // Buttons
     
-    [_playerOneSkillSubtractButton setEnabled:(_playerOneSkillLevel == 1) ? NO : YES];
-    [_playerTwoSkillSubtractButton setEnabled:(_playerTwoSkillLevel == 1) ? NO : YES];
-    [_playerOneSkillAddButton      setEnabled:(_playerTwoSkillLevel == 9) ? NO : YES];
-    [_playerTwoSkillAddButton      setEnabled:(_playerOneSkillLevel == 9) ? NO : YES];
+    [_playerOneSkillSubtractButton setEnabled:(_playerOneSkillLevel > 1) ? YES : NO];
+    [_playerTwoSkillSubtractButton setEnabled:(_playerTwoSkillLevel > 1) ? YES : NO];
+    [_playerOneSkillAddButton      setEnabled:(_playerOneSkillLevel < 9) ? YES : NO];
+    [_playerTwoSkillAddButton      setEnabled:(_playerTwoSkillLevel < 9) ? YES : NO];
 }
 
 @end
