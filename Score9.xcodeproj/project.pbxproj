@@ -26,6 +26,8 @@
 		6A838B7016D06E6D0027C696 /* CZPlayerScore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A838B6F16D06E6D0027C696 /* CZPlayerScore.m */; };
 		6A838B7116D06E6D0027C696 /* CZPlayerScore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A838B6F16D06E6D0027C696 /* CZPlayerScore.m */; };
 		6A838B7416D06FF40027C696 /* CZPlayerScoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A838B7316D06FF40027C696 /* CZPlayerScoreTests.m */; };
+		6A838B7716D08AB70027C696 /* CZPointsTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A838B7616D08AB70027C696 /* CZPointsTable.m */; };
+		6A838B7816D08AB70027C696 /* CZPointsTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A838B7616D08AB70027C696 /* CZPointsTable.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		6A838B6E16D06E6D0027C696 /* CZPlayerScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZPlayerScore.h; sourceTree = "<group>"; };
 		6A838B6F16D06E6D0027C696 /* CZPlayerScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZPlayerScore.m; sourceTree = "<group>"; };
 		6A838B7316D06FF40027C696 /* CZPlayerScoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZPlayerScoreTests.m; sourceTree = "<group>"; };
+		6A838B7516D08AB70027C696 /* CZPointsTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZPointsTable.h; sourceTree = "<group>"; };
+		6A838B7616D08AB70027C696 /* CZPointsTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZPointsTable.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,8 @@
 				6A78BC2816CE2D70004D28CF /* CZAppDelegate.m */,
 				6A838B6E16D06E6D0027C696 /* CZPlayerScore.h */,
 				6A838B6F16D06E6D0027C696 /* CZPlayerScore.m */,
+				6A838B7516D08AB70027C696 /* CZPointsTable.h */,
+				6A838B7616D08AB70027C696 /* CZPointsTable.m */,
 				6A78BC3316CE2D70004D28CF /* CZViewController.h */,
 				6A78BC3416CE2D70004D28CF /* CZViewController.m */,
 				6A78BC3016CE2D70004D28CF /* MainStoryboard.storyboard */,
@@ -284,6 +290,7 @@
 				6A78BC2916CE2D70004D28CF /* CZAppDelegate.m in Sources */,
 				6A78BC3516CE2D70004D28CF /* CZViewController.m in Sources */,
 				6A838B7016D06E6D0027C696 /* CZPlayerScore.m in Sources */,
+				6A838B7716D08AB70027C696 /* CZPointsTable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +301,7 @@
 				6A78BC4A16CE2D70004D28CF /* Score9Tests.m in Sources */,
 				6A838B7116D06E6D0027C696 /* CZPlayerScore.m in Sources */,
 				6A838B7416D06FF40027C696 /* CZPlayerScoreTests.m in Sources */,
+				6A838B7816D08AB70027C696 /* CZPointsTable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

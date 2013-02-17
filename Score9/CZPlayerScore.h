@@ -18,4 +18,6 @@
 - (void)increaseSkillLevel;
 - (void)decreaseSkillLevel;
 
+- (NSUInteger)pointsToWin;
+
 @end

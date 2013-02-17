@@ -31,4 +31,29 @@
     }
 }
 
+- (NSUInteger)pointsToWin {
+    switch ([self skillLevel]) {
+        case 1:
+            return 14;
+        case 2:
+            return 19;
+        case 3:
+            return 25;
+        case 4:
+            return 31;
+        case 5:
+            return 38;
+        case 6:
+            return 46;
+        case 7:
+            return 55;
+        case 8:
+            return 65;
+        case 9:
+            return 75;
+        default:
+            return 0;
+    }
+}
+
 @end
