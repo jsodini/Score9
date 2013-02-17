@@ -35,10 +35,13 @@
     
     // Buttons
     
-    [[self playerOneSkillSubtractButton] setEnabled:([[self playerOneScore] skillLevel] > 1) ? YES : NO];
-    [[self playerTwoSkillSubtractButton] setEnabled:([[self playerTwoScore] skillLevel] > 1) ? YES : NO];
-    [[self playerOneSkillAddButton]      setEnabled:([[self playerOneScore] skillLevel] < 9) ? YES : NO];
-    [[self playerTwoSkillAddButton]      setEnabled:([[self playerTwoScore] skillLevel] < 9) ? YES : NO];
+    BOOL (^subSkillEnabled)(NSUInteger) = ^BOOL(NSUInteger skillLevel) { return (skillLevel > 1) ? YES : NO; };
+    BOOL (^addSkillEnabled)(NSUInteger) = ^BOOL(NSUInteger skillLevel) { return (skillLevel < 9) ? YES : NO; };
+    
+    [[self playerOneSkillSubtractButton] setEnabled:subSkillEnabled([[self playerOneScore] skillLevel])];
+    [[self playerTwoSkillSubtractButton] setEnabled:subSkillEnabled([[self playerTwoScore] skillLevel])];
+    [[self playerOneSkillAddButton]      setEnabled:addSkillEnabled([[self playerOneScore] skillLevel])];
+    [[self playerTwoSkillAddButton]      setEnabled:addSkillEnabled([[self playerTwoScore] skillLevel])];
 }
 
 - (IBAction)skillLevelChange:(id)sender {
