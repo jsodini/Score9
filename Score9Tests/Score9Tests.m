@@ -10,23 +10,12 @@
 
 @implementation Score9Tests
 
-- (void)setUp
-{
+- (void)setUp {
     [super setUp];
-    
-    // Set-up code here.
 }
 
-- (void)tearDown
-{
-    // Tear-down code here.
-    
+- (void)tearDown {    
     [super tearDown];
-}
-
-- (void)testExample
-{
-    STFail(@"Unit tests are not implemented yet in Score9Tests");
 }
 
 @end

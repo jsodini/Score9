@@ -9,19 +9,21 @@
 #import "CZViewController.h"
 
 @interface CZViewController ()
-
+- (void)updateUI;
 @end
 
 @implementation CZViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    _playerOneSkillLevel = _playerTwoSkillLevel = 4;
+
+    [self updateUI];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (void)updateUI {

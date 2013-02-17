@@ -23,6 +23,9 @@
 		6A78BC3F16CE2D70004D28CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A78BC1A16CE2D70004D28CF /* Foundation.framework */; };
 		6A78BC4716CE2D70004D28CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A78BC4516CE2D70004D28CF /* InfoPlist.strings */; };
 		6A78BC4A16CE2D70004D28CF /* Score9Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A78BC4916CE2D70004D28CF /* Score9Tests.m */; };
+		6A838B7016D06E6D0027C696 /* CZPlayerScore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A838B6F16D06E6D0027C696 /* CZPlayerScore.m */; };
+		6A838B7116D06E6D0027C696 /* CZPlayerScore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A838B6F16D06E6D0027C696 /* CZPlayerScore.m */; };
+		6A838B7416D06FF40027C696 /* CZPlayerScoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A838B7316D06FF40027C696 /* CZPlayerScoreTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		6A78BC4616CE2D70004D28CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6A78BC4816CE2D70004D28CF /* Score9Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Score9Tests.h; sourceTree = "<group>"; };
 		6A78BC4916CE2D70004D28CF /* Score9Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Score9Tests.m; sourceTree = "<group>"; };
+		6A838B6E16D06E6D0027C696 /* CZPlayerScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZPlayerScore.h; sourceTree = "<group>"; };
+		6A838B6F16D06E6D0027C696 /* CZPlayerScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZPlayerScore.m; sourceTree = "<group>"; };
+		6A838B7316D06FF40027C696 /* CZPlayerScoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZPlayerScoreTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,8 @@
 			children = (
 				6A78BC2716CE2D70004D28CF /* CZAppDelegate.h */,
 				6A78BC2816CE2D70004D28CF /* CZAppDelegate.m */,
+				6A838B6E16D06E6D0027C696 /* CZPlayerScore.h */,
+				6A838B6F16D06E6D0027C696 /* CZPlayerScore.m */,
 				6A78BC3316CE2D70004D28CF /* CZViewController.h */,
 				6A78BC3416CE2D70004D28CF /* CZViewController.m */,
 				6A78BC3016CE2D70004D28CF /* MainStoryboard.storyboard */,
@@ -146,6 +154,7 @@
 			children = (
 				6A78BC4816CE2D70004D28CF /* Score9Tests.h */,
 				6A78BC4916CE2D70004D28CF /* Score9Tests.m */,
+				6A838B7316D06FF40027C696 /* CZPlayerScoreTests.m */,
 				6A78BC4316CE2D70004D28CF /* Supporting Files */,
 			);
 			path = Score9Tests;
@@ -274,6 +283,7 @@
 				6A78BC2516CE2D70004D28CF /* main.m in Sources */,
 				6A78BC2916CE2D70004D28CF /* CZAppDelegate.m in Sources */,
 				6A78BC3516CE2D70004D28CF /* CZViewController.m in Sources */,
+				6A838B7016D06E6D0027C696 /* CZPlayerScore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +292,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A78BC4A16CE2D70004D28CF /* Score9Tests.m in Sources */,
+				6A838B7116D06E6D0027C696 /* CZPlayerScore.m in Sources */,
+				6A838B7416D06FF40027C696 /* CZPlayerScoreTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
