@@ -65,6 +65,19 @@
     [[self playerOneScoreLabel] setText:[[NSNumber numberWithInt:[[self playerOneScore] score]] stringValue]];
     [[self playerTwoScoreLabel] setText:[[NSNumber numberWithInt:[[self playerTwoScore] score]] stringValue]];
 
+    BOOL (^subPointEnabled)(CZPlayerScore *) = ^BOOL(CZPlayerScore *playerScore) { return ([playerScore currentScore] > 0) ? YES : NO; };
+    BOOL (^addPointEnabled)(CZPlayerScore *) = ^BOOL(CZPlayerScore *playerScore) {
+        if ([playerScore hasWon] || [[playerScore opponent] hasWon]) {
+            return NO;
+        }
+        
+        return YES;
+    };
+    
+    [[self playerOnePointSubtractButton] setEnabled:subPointEnabled([self playerOneScore])];
+    [[self playerOnePointAddButton] setEnabled:addPointEnabled([self playerOneScore])];
+    [[self playerTwoPointSubtractButton] setEnabled:subPointEnabled([self playerTwoScore])];
+    [[self playerTwoPointAddButton] setEnabled:addPointEnabled([self playerTwoScore])];
 }
 
 - (void)updateProgress {

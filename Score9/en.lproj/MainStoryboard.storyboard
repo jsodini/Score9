@@ -100,7 +100,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="pointChange:" destination="2" eventType="touchUpInside" id="41p-LO-eCv"/>
+                                    <action selector="pointChange:" destination="2" eventType="touchUpInside" id="bOp-XV-gbc"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player Two" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6EK-uh-hvQ">
@@ -118,7 +118,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="pointChange:" destination="2" eventType="touchUpInside" id="cRs-Jw-joL"/>
+                                    <action selector="pointChange:" destination="2" eventType="touchUpInside" id="c93-5J-BhF"/>
                                 </connections>
                             </button>
                             <progressView opaque="NO" contentMode="scaleToFill" progress="0.10000000149011612" translatesAutoresizingMaskIntoConstraints="NO" id="ebh-dl-erv"/>
