@@ -23,7 +23,7 @@
 
 - (NSUInteger)score {
     if ([self hasWon] && [self opponent] != nil) {
-        return 20 - [[self opponent] currentScore];
+        return 20 - [[self opponent] score];
     }
     
     PointsTable pointsTable = [CZPointsTable PointsTableWithSkillLevel:[self skillLevel]];
