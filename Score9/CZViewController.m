@@ -10,6 +10,9 @@
 
 @interface CZViewController ()
 - (void)updateUI;
+- (void)updateSkill;
+- (void)updateScore;
+- (void)updateProgress;
 @end
 
 @implementation CZViewController
@@ -19,6 +22,9 @@
     
     _playerOneScore = [[CZPlayerScore alloc] initWithSkillLevel:4];
     _playerTwoScore = [[CZPlayerScore alloc] initWithSkillLevel:4];
+    
+    [[self playerOneScore] setOpponent:[self playerTwoScore]];
+    [[self playerTwoScore] setOpponent:[self playerOneScore]];
 
     [self updateUI];
 }
@@ -28,10 +34,12 @@
 }
 
 - (void)updateUI {
-    //
-    // Skill
-    //
-    
+    [self updateSkill];
+    [self updateScore];
+    [self updateProgress];
+}
+
+- (void)updateSkill {
     BOOL (^subSkillEnabled)(NSUInteger) = ^BOOL(NSUInteger skillLevel) { return (skillLevel > 1) ? YES : NO; };
     BOOL (^addSkillEnabled)(NSUInteger) = ^BOOL(NSUInteger skillLevel) { return (skillLevel < 9) ? YES : NO; };
     
@@ -45,24 +53,21 @@
     
     [[self playerOneSkillLabel] setText:[[NSNumber numberWithInt:playerOneSkillLevel] stringValue]];
     [[self playerTwoSkillLabel] setText:[[NSNumber numberWithInt:playerTwoSKillLevel] stringValue]];
-    
-    //
-    // Score
-    //
-    
-    [[self playerOneScoreLabel] setText:[[NSNumber numberWithInt:[[self playerOneScore] currentScore]] stringValue]];
-    [[self playerTwoScoreLabel] setText:[[NSNumber numberWithInt:[[self playerTwoScore] currentScore]] stringValue]];
+}
+
+- (void)updateScore {
     [[self playerOneWinLabel] setText:[[NSNumber numberWithInt:[[self playerOneScore] pointsToWin]] stringValue]];
     [[self playerTwoWinLabel] setText:[[NSNumber numberWithInt:[[self playerTwoScore] pointsToWin]] stringValue]];
     [[self playerOneNextPointLabel] setText:[[NSNumber numberWithInt:[[self playerOneScore] nextPoint]] stringValue]];
     [[self playerTwoNextPointLabel] setText:[[NSNumber numberWithInt:[[self playerTwoScore] nextPoint]] stringValue]];
     [[self playerOneRemaining] setText:[[NSNumber numberWithInt:[[self playerOneScore] remainingPoints]] stringValue]];
     [[self playerTwoRemaining] setText:[[NSNumber numberWithInt:[[self playerTwoScore] remainingPoints]] stringValue]];
-    
-    //
-    // Progress
-    //
-    
+    [[self playerOneScoreLabel] setText:[[NSNumber numberWithInt:[[self playerOneScore] score]] stringValue]];
+    [[self playerTwoScoreLabel] setText:[[NSNumber numberWithInt:[[self playerTwoScore] score]] stringValue]];
+
+}
+
+- (void)updateProgress {
     [[self playerOneWinBar] setProgress:[[self playerOneScore] percentageComplete]];
     [[self playerTwoWinBar] setProgress:[[self playerTwoScore] percentageComplete]];
 }

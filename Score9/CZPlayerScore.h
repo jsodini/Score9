@@ -12,6 +12,7 @@
 
 @property (assign, nonatomic) NSUInteger skillLevel;
 @property (assign, nonatomic) NSUInteger currentScore;
+@property (retain, nonatomic) CZPlayerScore *opponent;
 
 - (id)initWithSkillLevel:(NSUInteger)skillLevel;
 
@@ -21,9 +22,12 @@
 - (void)increaseScore;
 - (void)decreaseScore;
 
+- (BOOL)hasWon;
+
 - (NSUInteger)pointsToWin;
 - (NSUInteger)nextPoint;
 - (NSUInteger)remainingPoints;
+- (NSUInteger)score;
 
 - (float)percentageComplete;
 

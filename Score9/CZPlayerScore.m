@@ -16,8 +16,19 @@
     
     [self setSkillLevel:skillLevel];
     [self setCurrentScore:0];
+    [self setOpponent:nil];
     
     return self;
+}
+
+- (NSUInteger)score {
+    if ([self hasWon] && [self opponent] != nil) {
+        return 20 - [[self opponent] currentScore];
+    }
+    
+    PointsTable pointsTable = [CZPointsTable PointsTableWithSkillLevel:[self skillLevel]];
+    
+    return pointsTable([self currentScore]);
 }
 
 - (void)increaseSkillLevel {
@@ -42,6 +53,10 @@
     if ([self currentScore] > 0) {
         [self setCurrentScore:[self currentScore] - 1];
     }
+}
+
+- (BOOL)hasWon {
+    return [self currentScore] == [self pointsToWin];
 }
 
 - (NSUInteger)pointsToWin {
