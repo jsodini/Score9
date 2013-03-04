@@ -23,8 +23,8 @@
     _playerOneScore = [[CZPlayerScore alloc] initWithSkillLevel:4];
     _playerTwoScore = [[CZPlayerScore alloc] initWithSkillLevel:4];
     
-    [[self playerOneScore] setOpponent:[self playerTwoScore]];
-    [[self playerTwoScore] setOpponent:[self playerOneScore]];
+    [_playerOneScore setOpponent:_playerTwoScore];
+    [_playerTwoScore setOpponent:_playerOneScore];
 
     [self updateUI];
 }
@@ -43,61 +43,55 @@
     BOOL (^subSkillEnabled)(NSUInteger) = ^BOOL(NSUInteger skillLevel) { return (skillLevel > 1) ? YES : NO; };
     BOOL (^addSkillEnabled)(NSUInteger) = ^BOOL(NSUInteger skillLevel) { return (skillLevel < 9) ? YES : NO; };
     
-    NSUInteger playerOneSkillLevel = [[self playerOneScore] skillLevel];
-    NSUInteger playerTwoSKillLevel = [[self playerTwoScore] skillLevel];
+    NSUInteger playerOneSkillLevel = [_playerOneScore skillLevel];
+    NSUInteger playerTwoSKillLevel = [_playerTwoScore skillLevel];
     
-    [[self playerOneSkillSubtractButton] setEnabled:subSkillEnabled(playerOneSkillLevel)];
-    [[self playerTwoSkillSubtractButton] setEnabled:subSkillEnabled(playerTwoSKillLevel)];
-    [[self playerOneSkillAddButton] setEnabled:addSkillEnabled(playerOneSkillLevel)];
-    [[self playerTwoSkillAddButton] setEnabled:addSkillEnabled(playerTwoSKillLevel)];
+    [_playerOneSkillSubtractButton setEnabled:subSkillEnabled(playerOneSkillLevel)];
+    [_playerTwoSkillSubtractButton setEnabled:subSkillEnabled(playerTwoSKillLevel)];
+    [_playerOneSkillAddButton setEnabled:addSkillEnabled(playerOneSkillLevel)];
+    [_playerTwoSkillAddButton setEnabled:addSkillEnabled(playerTwoSKillLevel)];
     
-    [[self playerOneSkillLabel] setText:[[NSNumber numberWithInt:playerOneSkillLevel] stringValue]];
-    [[self playerTwoSkillLabel] setText:[[NSNumber numberWithInt:playerTwoSKillLevel] stringValue]];
+    [_playerOneSkillLabel setText:[[NSNumber numberWithInt:playerOneSkillLevel] stringValue]];
+    [_playerTwoSkillLabel setText:[[NSNumber numberWithInt:playerTwoSKillLevel] stringValue]];
 }
 
 - (void)updateScore {
-    [[self playerOneWinLabel] setText:[[NSNumber numberWithInt:[[self playerOneScore] pointsToWin]] stringValue]];
-    [[self playerTwoWinLabel] setText:[[NSNumber numberWithInt:[[self playerTwoScore] pointsToWin]] stringValue]];
-    [[self playerOneNextPointLabel] setText:[[NSNumber numberWithInt:[[self playerOneScore] nextPoint]] stringValue]];
-    [[self playerTwoNextPointLabel] setText:[[NSNumber numberWithInt:[[self playerTwoScore] nextPoint]] stringValue]];
-    [[self playerOneRemaining] setText:[[NSNumber numberWithInt:[[self playerOneScore] remainingPoints]] stringValue]];
-    [[self playerTwoRemaining] setText:[[NSNumber numberWithInt:[[self playerTwoScore] remainingPoints]] stringValue]];
-    [[self playerOneScoreLabel] setText:[[NSNumber numberWithInt:[[self playerOneScore] score]] stringValue]];
-    [[self playerTwoScoreLabel] setText:[[NSNumber numberWithInt:[[self playerTwoScore] score]] stringValue]];
+    [_playerOneWinLabel setText:[[NSNumber numberWithInt:[_playerOneScore pointsToWin]] stringValue]];
+    [_playerTwoWinLabel setText:[[NSNumber numberWithInt:[_playerTwoScore pointsToWin]] stringValue]];
+    [_playerOneNextPointLabel setText:[[NSNumber numberWithInt:[_playerOneScore nextPoint]] stringValue]];
+    [_playerTwoNextPointLabel setText:[[NSNumber numberWithInt:[_playerTwoScore nextPoint]] stringValue]];
+    [_playerOneRemaining setText:[[NSNumber numberWithInt:[_playerOneScore remainingPoints]] stringValue]];
+    [_playerTwoRemaining setText:[[NSNumber numberWithInt:[_playerTwoScore remainingPoints]] stringValue]];
+    [_playerOneScoreLabel setText:[[NSNumber numberWithInt:[_playerOneScore score]] stringValue]];
+    [_playerTwoScoreLabel setText:[[NSNumber numberWithInt:[_playerTwoScore score]] stringValue]];
 
     BOOL (^subPointEnabled)(CZPlayerScore *) = ^BOOL(CZPlayerScore *playerScore) { return ([playerScore currentScore] > 0) ? YES : NO; };
-    BOOL (^addPointEnabled)(CZPlayerScore *) = ^BOOL(CZPlayerScore *playerScore) {
-        if ([playerScore hasWon] || [[playerScore opponent] hasWon]) {
-            return NO;
-        }
-        
-        return YES;
-    };
+    BOOL (^addPointEnabled)(CZPlayerScore *) = ^BOOL(CZPlayerScore *playerScore) { return ([playerScore hasWon] || [[playerScore opponent] hasWon]) ? NO : YES; };
     
-    [[self playerOnePointSubtractButton] setEnabled:subPointEnabled([self playerOneScore])];
-    [[self playerOnePointAddButton] setEnabled:addPointEnabled([self playerOneScore])];
-    [[self playerTwoPointSubtractButton] setEnabled:subPointEnabled([self playerTwoScore])];
-    [[self playerTwoPointAddButton] setEnabled:addPointEnabled([self playerTwoScore])];
+    [_playerOnePointSubtractButton setEnabled:subPointEnabled(_playerOneScore)];
+    [_playerOnePointAddButton setEnabled:addPointEnabled(_playerOneScore)];
+    [_playerTwoPointSubtractButton setEnabled:subPointEnabled(_playerTwoScore)];
+    [_playerTwoPointAddButton setEnabled:addPointEnabled(_playerTwoScore)];
 }
 
 - (void)updateProgress {
-    [[self playerOneWinBar] setProgress:[[self playerOneScore] percentageComplete]];
-    [[self playerTwoWinBar] setProgress:[[self playerTwoScore] percentageComplete]];
+    [_playerOneWinBar setProgress:[_playerOneScore percentageComplete]];
+    [_playerTwoWinBar setProgress:[_playerTwoScore percentageComplete]];
 }
 
 - (IBAction)skillLevelChange:(id)sender {
     switch ([sender tag]) {
         case 1:
-            [[self playerOneScore] decreaseSkillLevel];
+            [_playerOneScore decreaseSkillLevel];
             break;
         case 2:
-            [[self playerOneScore] increaseSkillLevel];
+            [_playerOneScore increaseSkillLevel];
             break;
         case 3:
-            [[self playerTwoScore] decreaseSkillLevel];
+            [_playerTwoScore decreaseSkillLevel];
             break;
         case 4:
-            [[self playerTwoScore] increaseSkillLevel];
+            [_playerTwoScore increaseSkillLevel];
             break;
     }
     
@@ -107,16 +101,16 @@
 - (IBAction)pointChange:(id)sender {
     switch ([sender tag]) {
         case 1:
-            [[self playerOneScore] decreaseScore];
+            [_playerOneScore decreaseScore];
             break;
         case 2:
-            [[self playerOneScore] increaseScore];
+            [_playerOneScore increaseScore];
             break;
         case 3:
-            [[self playerTwoScore] decreaseScore];
+            [_playerTwoScore decreaseScore];
             break;
         case 4:
-            [[self playerTwoScore] increaseScore];
+            [_playerTwoScore increaseScore];
             break;
     }
     
