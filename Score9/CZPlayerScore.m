@@ -50,7 +50,7 @@
 }
 
 - (void)decreaseScore {
-    if ([self currentScore] > 0) {
+    if ([self currentScore] > 1) {
         [self setCurrentScore:[self currentScore] - 1];
     }
 }
